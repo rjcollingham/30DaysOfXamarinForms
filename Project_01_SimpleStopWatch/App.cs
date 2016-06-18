@@ -8,23 +8,7 @@ namespace Project_01_SimpleStopWatch
 	{
 		public App()
 		{
-			// The root page of your application
-			var content = new ContentPage
-			{
-				Title = "Project_01_SimpleStopWatch",
-				Content = new StackLayout
-				{
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
-
-			MainPage = new NavigationPage(content);
+			MainPage = new StopWatchView();
 		}
 
 		protected override void OnStart()
