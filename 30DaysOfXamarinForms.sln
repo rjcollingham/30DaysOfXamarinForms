@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_01_SimpleStopWatch.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_01_SimpleStopWatch.Droid", "Droid\Project_01_SimpleStopWatch.Droid.csproj", "{E74E94BB-7912-4FEC-9043-98FDDD413EBA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project_01_SimpleStopWatch", "Project_01_SimpleStopWatch", "{FB8B8114-8241-4B1D-AF2E-60B74F775BC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -31,5 +33,10 @@ Global
 		{E74E94BB-7912-4FEC-9043-98FDDD413EBA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{E74E94BB-7912-4FEC-9043-98FDDD413EBA}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{E74E94BB-7912-4FEC-9043-98FDDD413EBA}.Debug|iPhone.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{237C7BD7-BD0C-43DC-9FB6-CAFEB3445F3F} = {FB8B8114-8241-4B1D-AF2E-60B74F775BC9}
+		{E74E94BB-7912-4FEC-9043-98FDDD413EBA} = {FB8B8114-8241-4B1D-AF2E-60B74F775BC9}
+		{3786F4DC-C201-4166-80D0-211C445C395D} = {FB8B8114-8241-4B1D-AF2E-60B74F775BC9}
 	EndGlobalSection
 EndGlobal
