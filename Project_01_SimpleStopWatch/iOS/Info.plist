@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>UIAppFonts</key>
-	<array>
-		<string>fontawesome.ttf</string>
-	</array>
+	<array/>
 	<key>CFBundleDisplayName</key>
 	<string>Project_01_SimpleStopWatch</string>
 	<key>CFBundleName</key>

@@ -7,8 +7,8 @@ namespace Project_01_SimpleStopWatch
 	public class StopWatchView : ContentPage
 	{
 		Button btnReset;
-		Button btnPlay;
-		Button btnPause;
+		Image btnPlay;
+		Image btnPause;
 		Label lblTime;
 		Timer timer;
 
@@ -49,32 +49,44 @@ namespace Project_01_SimpleStopWatch
 			lblTime.VerticalTextAlignment = TextAlignment.Center;
 			UpdateDisplay();
 
-			btnPause = new Button();
-			btnPause.BackgroundColor = Color.FromRgba(0.46F, 0.77F, 0.01F, 1);
-			btnPause.TextColor = Color.White;
-			btnPause.FontFamily = Device.OnPlatform(
-					iOS: "FontAwesome",
-					Android: "fontawesome.ttf",
-					WinPhone: ""
-			);
+			BoxView bxPause = new BoxView
+			{
+				BackgroundColor = Color.FromRgba(0.46F, 0.77F, 0.01F, 1),
+			};
+			btnPause = new Image();
+			btnPause.InputTransparent = true;
+			btnPause.HorizontalOptions = LayoutOptions.Center;
+			btnPause.VerticalOptions = LayoutOptions.Center;
+			btnPause.Source = "pause.png";
 			btnPause.IsEnabled = false;
-			btnPause.Text = "\uf04c";
-			btnPause.FontSize = 30;
-			btnPause.BorderRadius = 0;
-			btnPause.Clicked += Pause_Clicked;
+			btnPause.WidthRequest = Device.GetNamedSize(NamedSize.Large, typeof(Label)) * 2;
+			bxPause.GestureRecognizers.Add(new TapGestureRecognizer
+			{
+				Command = new Command(() =>
+				{
+					Pause_Clicked();
+				}),
+				NumberOfTapsRequired = 1
+			});
 
-			btnPlay = new Button();
-			btnPlay.BackgroundColor = Color.FromRgba(0.4F, 0.47F, 1, 1);
-			btnPlay.TextColor = Color.White;
-			btnPlay.FontFamily = Device.OnPlatform(
-					iOS: "FontAwesome",
-					Android: "fontawesome.ttf",
-					WinPhone: ""
-			);
-			btnPlay.Text = "\uf04b";
-			btnPlay.FontSize = 30;
-			btnPlay.BorderRadius = 0;
-			btnPlay.Clicked += Play_Clicked;
+			BoxView bxPlay = new BoxView
+			{
+				BackgroundColor = Color.FromRgba(0.4F, 0.47F, 1, 1),
+			};
+			btnPlay = new Image();
+			btnPlay.InputTransparent = true;
+			btnPlay.HorizontalOptions = LayoutOptions.Center;
+			btnPlay.VerticalOptions = LayoutOptions.Center;
+			btnPlay.Source = "play.png";
+			btnPlay.WidthRequest = Device.GetNamedSize(NamedSize.Large, typeof(Label)) * 2;
+			bxPlay.GestureRecognizers.Add(new TapGestureRecognizer
+			{
+				Command = new Command(() =>
+				{
+					Play_Clicked();
+				}),
+				NumberOfTapsRequired = 1
+			});
 
 			Grid grid = new Grid();
 			grid.Padding = 0;
@@ -88,25 +100,34 @@ namespace Project_01_SimpleStopWatch
 
 			grid.Children.Add(lblTime, 0, 2, 0, 1);
 			grid.Children.Add(btnReset, 0, 2, 0, 1);
+			grid.Children.Add(bxPlay, 0, 1);
+			grid.Children.Add(bxPause, 1, 1);
 			grid.Children.Add(btnPlay, 0, 1);
 			grid.Children.Add(btnPause, 1, 1);
+
 			Content = grid;
 		}
 
-		void Pause_Clicked(object sender, EventArgs e)
+		void Pause_Clicked()
 		{
-			btnReset.IsEnabled = true;
-			btnPlay.IsEnabled = true;
-			btnPause.IsEnabled = false;
-			timer.Stop();
+			if (btnPause.IsEnabled)
+			{
+				btnReset.IsEnabled = true;
+				btnPlay.IsEnabled = true;
+				btnPause.IsEnabled = false;
+				timer.Stop();
+			}
 		}
 
-		void Play_Clicked(object sender, EventArgs e)
+		void Play_Clicked()
 		{
-			btnPlay.IsEnabled = false;
-			btnPause.IsEnabled = true;
-			btnReset.IsEnabled = false;
-			timer.Start();
+			if (btnPlay.IsEnabled)
+			{
+				btnPlay.IsEnabled = false;
+				btnPause.IsEnabled = true;
+				btnReset.IsEnabled = false;
+				timer.Start();
+			}
 		}
 
 		void Reset_Clicked(object sender, EventArgs e)
