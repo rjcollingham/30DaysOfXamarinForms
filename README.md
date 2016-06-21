@@ -10,5 +10,5 @@ This repository is my Xamarin Forms set of projects.
 
 ## [Project 01 - Simple Stop Watch](https://github.com/rjcollingham/30DaysOfXamarinForms/tree/master/Project_01_SimpleStopWatch)
 
-![Simple Stop Watch iOS](https://github.com/rjcollingham/30DaysOfXamarinForms/blob/master/Screenshots/01Forms.gif)
+![Simple Stop Watch Forms](https://github.com/rjcollingham/30DaysOfXamarinForms/blob/master/Screenshots/01Forms.gif)
 
