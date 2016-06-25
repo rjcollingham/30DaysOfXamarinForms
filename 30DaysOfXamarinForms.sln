@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_01_SimpleStopWatch.
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Project_01_SimpleStopWatch", "Project_01_SimpleStopWatch\Shared\Project_01_SimpleStopWatch.shproj", "{237C7BD7-BD0C-43DC-9FB6-CAFEB3445F3F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project_02_CustomFont", "Project_02_CustomFont", "{3CF67476-3156-4478-BEF8-543A2C35AA02}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Project_02_CustomFont", "Project_02_CustomFont\Project_02_CustomFont\Project_02_CustomFont.shproj", "{AD6C24DC-2746-4C6F-9DD0-8D0F42541817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_02_CustomFont.iOS", "Project_02_CustomFont\iOS\Project_02_CustomFont.iOS.csproj", "{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_02_CustomFont.Droid", "Project_02_CustomFont\Droid\Project_02_CustomFont.Droid.csproj", "{259EEA59-A660-4B58-B54A-8281C827C429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -33,10 +41,29 @@ Global
 		{3786F4DC-C201-4166-80D0-211C445C395D}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{3786F4DC-C201-4166-80D0-211C445C395D}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{3786F4DC-C201-4166-80D0-211C445C395D}.Debug|iPhone.Build.0 = Debug|iPhone
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Release|iPhone.Build.0 = Release|iPhone
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Release|iPhone.Build.0 = Release|Any CPU
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{259EEA59-A660-4B58-B54A-8281C827C429}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E74E94BB-7912-4FEC-9043-98FDDD413EBA} = {EE31923C-4F27-434C-ABA2-6C1638A77A95}
 		{3786F4DC-C201-4166-80D0-211C445C395D} = {EE31923C-4F27-434C-ABA2-6C1638A77A95}
 		{237C7BD7-BD0C-43DC-9FB6-CAFEB3445F3F} = {EE31923C-4F27-434C-ABA2-6C1638A77A95}
+		{AD6C24DC-2746-4C6F-9DD0-8D0F42541817} = {3CF67476-3156-4478-BEF8-543A2C35AA02}
+		{82EB2AFF-FBBC-4196-8FFD-329B17E37D4C} = {3CF67476-3156-4478-BEF8-543A2C35AA02}
+		{259EEA59-A660-4B58-B54A-8281C827C429} = {3CF67476-3156-4478-BEF8-543A2C35AA02}
 	EndGlobalSection
 EndGlobal
