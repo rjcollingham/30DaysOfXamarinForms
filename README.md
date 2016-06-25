@@ -12,3 +12,6 @@ This repository is my Xamarin Forms set of projects.
 
 ![Simple Stop Watch Forms](https://github.com/rjcollingham/30DaysOfXamarinForms/blob/master/Screenshots/01Forms.gif)
 
+## [Project 02 - Custom Font](https://github.com/rjcollingham/30DaysOfXamarinForms/tree/master/Project_02_CustomFont)
+
+![Custom Font Forms](https://github.com/rjcollingham/30DaysOfXamarinForms/blob/master/Screenshots/02Forms.gif)
